@@ -1,3 +1,8 @@
+/* Mobile first */
+header {
+    margin-bottom: 64px;
+}
+
 header h2 {
     font-family: 'Inconsolata', monospace, serif;
     size: 24px;
@@ -21,6 +26,7 @@ header h2 {
 }
 
 #other h1 {
+    margin-top: 60px;
     font-family: 'Space Mono', monospace, serif;
     font-weight: 700;
     font-size: 48px;
@@ -28,6 +34,9 @@ header h2 {
 }
 
 #other p {
+    width: 328px;
+    margin-top: 30px;
+    height: 81px;
     font-family: 'Space Mono', monospace, serif;
     font-weight: 400;
     font-size: 18px;
@@ -37,6 +46,7 @@ header h2 {
 
 #other button {
     width: 216px;
+    margin-top: 66px;
     height: 68px;
     background-color: #333333;
     color: #fff;
@@ -45,6 +55,10 @@ header h2 {
     font-size: 14px;
     line-height: 20.73px;
     border: none; /* le retira el borde al button */
+}
+
+footer {
+    margin-top: 115px;
 }
 
 footer p {
@@ -59,4 +73,31 @@ footer p {
 footer p a {
     font-weight: 700;
     color: #bdbdbd;
+}
+
+/* Desktop styles */
+
+@media (min-width:768px) {
+    main {
+        display: flex;
+        margin-top: 200px;
+    }
+    #scarecrow {
+        width: 539.22px;
+        height: 447.43px;
+        margin-right: 118.78px;
+        margin-left: 77px;
+    }
+    #other h1 {
+        width: 586px;
+        height: 190px;
+        font-size: 64px;
+        line-height: 94.78px;
+    }
+    #other p{
+        width: 381px;
+        height: 108px;
+        font-size: 24px;
+        line-height: 35.54px;
+    }
 }
